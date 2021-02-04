@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title>icikrikc - ft_server</title>
+        <meta charset = "UTF-8" />
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bellota:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	</head>
+	<style>
+	body, html {
+    height: 100%;
+	background-color: whitesmoke;
+	}
+
+	header {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		padding: 5px 15px;
+		background-color: rgba(0, 5, 126, 0.5);
+	}
+
+	header h1 {
+    font-size: 2.4rem;
+    margin: 30px 50px 50px 10px;
+    color: whitesmoke;
+	}
+
+    #links {
+      display: grid;
+      grid-template-columns: 100px 160px 100px;
+      margin-left: 34%;
+      margin-top: 20px;
+    }
+
+	.btn {
+    padding: 10px 30px 10px 10px;
+    font-size: 20px;
+    font-family: 'Bellota', cursive;
+    color: whitesmoke;
+    background-color: rgba(0, 5, 126, 0.5);
+	}
+
+	.btn::before {
+		content: "+ ";
+		transition: 0.5s;
+	}
+
+	.btn:hover::before {
+		padding-left: 1rem;
+	}
+
+	footer div {
+		position: absolute;
+		box-sizing: border-box;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		padding: 5px 5px;
+		text-align: center;
+		font-size: 15px;
+		font-family: 'Montserrat', sans-serif;
+		color: whitesmoke;
+		font-weight: bold;
+		background-color: rgba(0, 5, 126, 0.5);
+	}
+
+	footer a {
+		text-decoration: none;
+		color: whitesmoke;
+	}
+
+	footer a:hover {
+		text-decoration: underline;
+		color: rgb(67, 95, 187);
+	}
+	</style>
+    </head>
+    <body>
+        <header>
+            <h1>ft_server</h1>
+		</header>
+		<div id="links">
+			<div>
+				<a href="https://localhost/index.php" target='_blank'>
+				  <button class="btn btn-default">Php</button>
+				</a>
+			</div>
+			<div>
+				<a href="https://localhost/wordpress" target='_blank'>
+				  <button class="btn btn-default">Wordpress</button>
+				</a>
+			</div>
+            <div>
+              <a href="https://localhost/phpmyadmin" target='_blank'>
+                <button class="btn btn-default">PhpmyAdmin</button>
+              </a>
+            </div>
+
+          </div>
+    </body>
+    <footer>
+        <div>Created by Irem for CODAM | <i class="fa fa-github" style="font-size:18px"></i> <a href="https://github.com/ergunirem" target="_blank">ergunirem</a>
+        </div>
+    </footer>
+    <script type="text/javascript" src="script.js"></script>
+</html>
