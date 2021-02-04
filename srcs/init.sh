@@ -6,7 +6,7 @@
 #    By: icikrikc <icikrikc@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2021/02/03 14:03:48 by icikrikc      #+#    #+#                  #
-#    Updated: 2021/02/04 10:28:50 by icikrikc      ########   odam.nl          #
+#    Updated: 2021/02/04 23:45:36 by icikrikc      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,6 +35,7 @@ echo "CREATE DATABASE wordpress;" | mysql -u root --skip-password
 echo "GRANT ALL PRIVILEGES ON wordpress.* TO 'root'@'localhost' WITH GRANT OPTION;" | mysql -u root --skip-password
 echo "update mysql.user set plugin='mysql_native_password' where user='root';" | mysql -u root --skip-password
 echo "FLUSH PRIVILEGES;" | mysql -u root --skip-password
+mysql wordpress -u root --password=  < /var/www/wordpress.sql
 
 # Install & Configure phpmyadmin
 wget https://files.phpmyadmin.net/phpMyAdmin/4.9.4/phpMyAdmin-4.9.4-all-languages.zip

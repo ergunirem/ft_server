@@ -6,7 +6,7 @@
 #    By: icikrikc <icikrikc@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2021/01/14 20:52:14 by icikrikc      #+#    #+#                  #
-#    Updated: 2021/02/03 17:34:28 by icikrikc      ########   odam.nl          #
+#    Updated: 2021/02/04 23:33:22 by icikrikc      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,6 +29,7 @@ COPY ./srcs/index.html ./tmp/index.html
 COPY ./srcs/nginx-conf ./tmp/nginx-conf
 COPY ./srcs/config.inc.php ./tmp/config.inc.php
 COPY ./srcs/wp-config.php ./tmp/wp-config.php
+COPY ./srcs/wordpress.sql /var/www/
 
 EXPOSE 80 443
 ENTRYPOINT ["sh","init.sh"]
