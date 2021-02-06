@@ -6,7 +6,7 @@
 #    By: icikrikc <icikrikc@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2021/01/14 20:52:14 by icikrikc      #+#    #+#                  #
-#    Updated: 2021/02/04 23:33:22 by icikrikc      ########   odam.nl          #
+#    Updated: 2021/02/05 13:20:17 by icikrikc      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,7 +23,7 @@ RUN apt-get -y install nginx
 RUN apt-get -y install mariadb-server
 RUN apt install php-fpm php-mysql php-mbstring php-dev php-gd php-pear php-zip php-xml php-curl -y
 
-# Copy necessary files from your host to your image
+# Copy necessary files to your image
 COPY ./srcs/init.sh ./
 COPY ./srcs/index.html ./tmp/index.html
 COPY ./srcs/nginx-conf ./tmp/nginx-conf
